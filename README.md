@@ -15,7 +15,7 @@ mysql -h 172.17.0.2 -u root -p1234 projetotgdb < projetotgdb.sql
 
 Para ficarmos alinhados, sempre que houver alguma alteração no banco rode esse comando
 ```
-mysqldump -h 172.17.0.2 -u root -p1234 --databases projetotgdb > projetotgdb.sql
+mysqldump -h 172.17.0.2 -u root -p1234 --databases projetogdb > projetotgdb.sql
 ```
 Este comando cria um backup de todos os dados da base
 
