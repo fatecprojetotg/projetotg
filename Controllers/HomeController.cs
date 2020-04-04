@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ProjetoTG.Models;
+using projetotg.Models;
 
-namespace ProjetoTG.Controllers
+namespace projetotg.Controllers
 {
     public class HomeController : Controller
     {

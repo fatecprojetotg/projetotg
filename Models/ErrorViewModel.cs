@@ -1,6 +1,6 @@
 using System;
 
-namespace ProjetoTG.Models
+namespace projetotg.Models
 {
     public class ErrorViewModel
     {
