@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xGBTeGH2wq3xquTdFUYNHnZvc7w8Dz9vmV3vvnuHyNTwj9WXFPdeINTnsUcLH1DYGIdabx3zI5Q+jOcatzO+hA==",
+  "dgSpecHash": "77sGUUPc3qYmriu8QHI6bMjPKe7fbotmU2yXDYgswhmwldHCpcVwbdP3hjv/GAT8Dtfw5KhDSEpWASixYOWxZw==",
   "success": true,
-  "projectFilePath": "/home/joaohugo/desenvolvimento1/projetotg/projetotg.csproj",
+  "projectFilePath": "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj",
   "expectedPackageFiles": [
     "/home/joaohugo/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/home/joaohugo/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

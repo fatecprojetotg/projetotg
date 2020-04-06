@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/projetotg.csproj",
+  "FilePath": "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,37 +20521,47 @@
   "RootNamespace": "projetotg",
   "Documents": [
     {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/Home/Index.cshtml",
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/_ViewImports.cshtml",
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/joaohugo/desenvolvimento1/projetotg/Views/Home/Privacy.cshtml",
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Account/Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Account/Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/joaohugo/desenvolvimento/projetotg/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     }

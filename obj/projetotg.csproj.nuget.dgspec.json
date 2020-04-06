@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/joaohugo/desenvolvimento1/projetotg/projetotg.csproj": {}
+    "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj": {}
   },
   "projects": {
-    "/home/joaohugo/desenvolvimento1/projetotg/projetotg.csproj": {
+    "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joaohugo/desenvolvimento1/projetotg/projetotg.csproj",
+        "projectUniqueName": "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj",
         "projectName": "projetotg",
-        "projectPath": "/home/joaohugo/desenvolvimento1/projetotg/projetotg.csproj",
+        "projectPath": "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj",
         "packagesPath": "/home/joaohugo/.nuget/packages/",
-        "outputPath": "/home/joaohugo/desenvolvimento1/projetotg/obj/",
+        "outputPath": "/home/joaohugo/desenvolvimento/projetotg/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/joaohugo/.nuget/NuGet/NuGet.Config"
