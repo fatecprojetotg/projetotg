@@ -2028,19 +2028,19 @@
     ]
   },
   "packageFolders": {
-    "/home/joaohugo/.nuget/packages/": {}
+    "C:\\Users\\Marcelo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj",
+      "projectUniqueName": "C:\\Users\\Marcelo\\Documents\\projetotg\\projetotg.csproj",
       "projectName": "projetotg",
-      "projectPath": "/home/joaohugo/desenvolvimento/projetotg/projetotg.csproj",
-      "packagesPath": "/home/joaohugo/.nuget/packages/",
-      "outputPath": "/home/joaohugo/desenvolvimento/projetotg/obj/",
+      "projectPath": "C:\\Users\\Marcelo\\Documents\\projetotg\\projetotg.csproj",
+      "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marcelo\\Documents\\projetotg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/joaohugo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -2099,7 +2099,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
