@@ -4,10 +4,23 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>Register</h1>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    
+    <title>Cadastro</title>
+</head>
+
+<body>
+<h1 class="titulos"><center>Cadastro</center></h1>
 
 <hr />
 <div class="row">
+    <div class="col-md-4"></div>
     <div class="col-md-4">
         <form asp-controller="Account" asp-action="Register">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -41,12 +54,13 @@
             </div>
         </form>
     </div>
+    <div class="col-md-4"></div>
 </div>
 
 <div>
     <a asp-controller="Home" asp-action="Index">Voltar</a>
 </div>
-
+</body>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

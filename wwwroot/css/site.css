@@ -56,12 +56,23 @@ button.accept-policy {
 html {
   position: relative;
   min-height: 100%;
-}
+} 
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background: linear-gradient(to bottom, #00ccff 0%, #0099cc 50%);
+  font-family: 'Raleway', sans-serif;
+  
 }
+.titulos{ /* Títulos das páginas*/
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn-light{ /*Botão de login*/
+  text-align: center;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
