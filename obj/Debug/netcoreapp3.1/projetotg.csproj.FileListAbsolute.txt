@@ -197,3 +197,5 @@ C:\Users\IsraelFreitasMendes\Box Sync\Pessoal (israelfr@br.ibm.com 2)\Assuntos\F
 C:\Users\IsraelFreitasMendes\Box Sync\Pessoal (israelfr@br.ibm.com 2)\Assuntos\Fatec\GTI\6º Semestre\PTI 2\Projeto\projetotg\obj\Debug\netcoreapp3.1\projetotg.dll
 C:\Users\IsraelFreitasMendes\Box Sync\Pessoal (israelfr@br.ibm.com 2)\Assuntos\Fatec\GTI\6º Semestre\PTI 2\Projeto\projetotg\obj\Debug\netcoreapp3.1\projetotg.pdb
 C:\Users\IsraelFreitasMendes\Box Sync\Pessoal (israelfr@br.ibm.com 2)\Assuntos\Fatec\GTI\6º Semestre\PTI 2\Projeto\projetotg\obj\Debug\netcoreapp3.1\projetotg.genruntimeconfig.cache
+C:\Users\IsraelFreitasMendes\Box Sync\Pessoal (israelfr@br.ibm.com 2)\Assuntos\Fatec\GTI\6º Semestre\PTI 2\Projeto\projetotg\obj\Debug\netcoreapp3.1\Razor\Views\Account\PasswordReset.cshtml.g.cs
+C:\Users\IsraelFreitasMendes\Box Sync\Pessoal (israelfr@br.ibm.com 2)\Assuntos\Fatec\GTI\6º Semestre\PTI 2\Projeto\projetotg\obj\Debug\netcoreapp3.1\Razor\Views\Base.cshtml.g.cs
