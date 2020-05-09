@@ -9,9 +9,9 @@ using projetotg.Models;
 
 namespace projetotg.Controllers{
     public class TicketController : Controller{
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<TicketController> _logger;
 
-        public TicketController(ILogger<HomeController> logger)
+        public TicketController(ILogger<TicketController> logger)
         {
             _logger = logger;
         }
@@ -21,12 +21,15 @@ namespace projetotg.Controllers{
         public IActionResult GetTicketsSuport(){
             return View();
         }
-        
         [HttpGet]
         public IActionResult CreateTicket(){
             return View();
         }
-
+        [HttpGet]
+        public IActionResult EditTicket(){
+            return View();
+        }
+    
         [HttpPut]
         public IActionResult UpdateTicket(){
             return View();
