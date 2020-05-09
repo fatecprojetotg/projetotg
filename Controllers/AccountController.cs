@@ -34,6 +34,7 @@ namespace projetotg.Controllers
             if(resultUser != null)
             {
                 var resultRequest = await _singInMgt.PasswordSignInAsync(resultUser.UserName, PasswordHash, false, false);
+
                 if(resultRequest.Succeeded)
                 {
                     return RedirectToAction("Index","Home");
