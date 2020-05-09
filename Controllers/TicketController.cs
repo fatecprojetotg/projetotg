@@ -15,23 +15,37 @@ namespace projetotg.Controllers{
         {
             _logger = logger;
         }
-
-        public IActionResult CreateTicketUser(){
+        public IActionResult GetTicketsUser(){
             return View();
         }
-         public IActionResult CreateTicketSuport(){
-            return View();
-        }
-         public IActionResult (){
-            return View();
-        }
-         public IActionResult CreateUser(){
-            return View();
-        }
-         public IActionResult CreateUser(){
+        public IActionResult GetTicketsSuport(){
             return View();
         }
         
+        [HttpGet]
+        public IActionResult CreateTicket(){
+            return View();
+        }
+
+        [HttpPut]
+        public IActionResult UpdateTicket(){
+            return View();
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteTicket(){
+            return View();
+        }
+
+        // [HttpPost]
+        // public IActionResult CreateTicketUser(){
+        //     return View();
+        // }
+        
+        // [HttpPost]
+        //  public IActionResult CreateTicketSuport(){
+        //     return View();
+        // }
 
     }
 }

@@ -30,7 +30,8 @@ namespace projetotg
             services.AddIdentity<AppUser,AppRole>(options => 
             {
                options.User.RequireUniqueEmail = true;
-            }).AddEntityFrameworkStores<IdentityAppContext>();
+            }).AddEntityFrameworkStores<IdentityAppContext>()
+              .AddRoles<IdentityRole>();
 
             services.AddDbContext<IdentityAppContext>(cfg => 
             {
