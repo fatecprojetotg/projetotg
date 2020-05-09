@@ -20521,6 +20521,11 @@
   "RootNamespace": "projetotg",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\IsraelFreitasMendes\\Box Sync\\Pessoal (israelfr@br.ibm.com 2)\\Assuntos\\Fatec\\GTI\\6º Semestre\\PTI 2\\Projeto\\projetotg\\Views\\Account\\PasswordReset.cshtml",
+      "TargetPath": "Views\\Account\\PasswordReset.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\IsraelFreitasMendes\\Box Sync\\Pessoal (israelfr@br.ibm.com 2)\\Assuntos\\Fatec\\GTI\\6º Semestre\\PTI 2\\Projeto\\projetotg\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -20558,6 +20563,11 @@
     {
       "FilePath": "c:\\Users\\IsraelFreitasMendes\\Box Sync\\Pessoal (israelfr@br.ibm.com 2)\\Assuntos\\Fatec\\GTI\\6º Semestre\\PTI 2\\Projeto\\projetotg\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\IsraelFreitasMendes\\Box Sync\\Pessoal (israelfr@br.ibm.com 2)\\Assuntos\\Fatec\\GTI\\6º Semestre\\PTI 2\\Projeto\\projetotg\\Views\\Base.cshtml",
+      "TargetPath": "Views\\Base.cshtml",
       "FileKind": "mvc"
     },
     {

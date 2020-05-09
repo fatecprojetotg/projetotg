@@ -61,7 +61,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background: linear-gradient(to bottom, #00ccff 0%, #0099cc 50%);
+  background: #b3d9ff;
   font-family: 'Raleway', sans-serif;
   
 }
@@ -71,6 +71,11 @@ body {
 
 .btn-light{ /*Botão de login*/
   text-align: center;
+}
+.jumbotron{
+   background-color: #cce6ff;
+   
+
 }
 
 .footer {
