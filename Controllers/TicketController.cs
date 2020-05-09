@@ -15,7 +15,6 @@ namespace projetotg.Controllers{
         {
             _logger = logger;
         }
-
         public IActionResult GetTicketsUser(){
             return View();
         }
