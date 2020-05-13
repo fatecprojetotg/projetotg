@@ -96,5 +96,11 @@ namespace projetotg.Controllers
             return View("Login");
 
         }
+
+        [HttpGet]
+        public IActionResult PasswordReset()
+        {
+            return View();
+        }
     }
 }

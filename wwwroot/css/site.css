@@ -56,12 +56,28 @@ button.accept-policy {
 html {
   position: relative;
   min-height: 100%;
-}
+} 
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background: #b3d9ff;
+  font-family: 'Raleway', sans-serif;
+  
 }
+.titulos{ /* Títulos das páginas*/
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn-light{ /*Botão de login*/
+  text-align: center;
+}
+.jumbotron{
+   background-color: #cce6ff;
+   
+
+}
+
 .footer {
   position: absolute;
   bottom: 0;
