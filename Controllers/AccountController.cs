@@ -94,7 +94,37 @@ namespace projetotg.Controllers
                  ViewBag.register = ex.Message;
             }
             return View("Login");
+        }
+        [HttpGet]
+        public IActionResult PasswordReset(){
+            
+            return View();
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> PasswordReset(string Email, string UserName,string OldPassword, 
+                                                        string NewPassword)
+        {
+            try
+            {
+                AppUser user = await _userMgr.FindByEmailAsync(Email) ;
+                if(user == null)
+                {
+                    ViewBag.UserNotFound = "NotFound";
+                }
+                else
+                {
+                    _userMgr.GenerateUserTokenAsync(user).Result
+                    // _singInMgt
+                    // _userMgr.ResetPasswordAsync()
+                }
+            }
+            catch(Exception ex)
+            {
+                 ViewBag.register = ex.Message;
+            }
+            return View("Login");
+            
         }
     }
 }
