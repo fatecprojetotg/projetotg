@@ -1,68 +1,88 @@
 @model projetotg.Models.AppUser
-
 @{
-    ViewData["Title"] = "Register";
+ViewData["Title"] = "Register";
 }
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="~/css/site.css" />
-    
-    
-    <title>Cadastro</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+   <link rel="stylesheet" href="~/css/site.css" />
+   <title>Cadastro</title>
 </head>
-
 <body>
-<h1 class="titulos"><center>Cadastro</center></h1>
 
-<hr />
-<div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <form asp-controller="Account" asp-action="Register">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirtName" class="control-label">Primeiro Nome</label>
-                <input asp-for="FirtName" class="form-control" /> 
-                <span asp-validation-for="FirtName" class="text- danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label">Sobrenome</label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">Endereço de Email</label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UserName" class="control-label">Username</label>
-                <input asp-for="UserName" class="form-control" />
-                <span asp-validation-for="UserName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PasswordHash" class="control-label">Senha</label>
-                <input asp-for="PasswordHash" type="password" class="form-control" />
-                <span asp-validation-for="PasswordHash" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-    <div class="col-md-4"></div>
-</div>
-
-<div>
-    <a asp-controller="Home" asp-action="Index">Voltar</a>
-</div>
+   <div class="row">
+      <div class="col-sm-2 col-md-3"></div>
+      <div class="col-sm-8 col-md-6">
+         <div class="well bg-fill-1">
+            <form id="login" name="login" class="form-horizontal" action="" method="post">
+               <input type="hidden" name="SMAGENTNAME" id="SMAGENTNAME" value="a0187457_ssoe_authac00_agent">
+               <input type="hidden" name="SMENC" id="SMENC" value="UTF-8">
+               <fieldset>
+                  <div class="row">
+                     <div class="clearfix border-bottom margin-bottom-xl">
+                        <h3><strong>Cadastro</strong></h3>
+                     </div>
+                  </div>
+                  <div class="hide" id="pageerror">
+                     <div class="alert alert-dismissible alert-danger bang" id="errorcontent">
+                     </div>
+                  </div>
+                  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                  <div class="form-group">
+                     <label asp-for="FirtName" class="control-label">Nome</label>
+                     <input asp-for="FirtName" class="form-control" /> 
+                     <span asp-validation-for="FirtName" class="text- danger"></span>
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="LastName" class="control-label">Sobrenome</label>
+                     <input asp-for="LastName" class="form-control" />
+                     <span asp-validation-for="LastName" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="Email" class="control-label">Endereço de Email</label>
+                     <input asp-for="Email" class="form-control" />
+                     <span asp-validation-for="Email" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="UserName" class="control-label">Usuário</label>
+                     <input asp-for="UserName" class="form-control" />
+                     <span asp-validation-for="UserName" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                     <label asp-for="PasswordHash" class="control-label">Senha</label>
+                     <input asp-for="PasswordHash" type="password" class="form-control" />
+                     <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-sm-3 col-md-3"></div>
+                     <div class="col-sm-9 col-md-9">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-sm-4 col-md-4"></div>
+                     <div class="col-sm-4 col-md-4">
+                     </div>
+                     <div class="col-sm-4 col-md-4">
+                        <button id="loginbtn" type="submit" class="btn btn-block btn-primary">Cadastrar
+                        <span class="hide" id="loadingimg">
+                        <img id="loadingimg" height="20px" alt="Loading.." src="/aciam/static/images/processing-transparent-v3.gif">
+                        </span>
+                        </button> 
+                     </div>
+                  </div>
+               </fieldset>
+               <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HQCl9iwgN9CmuPw1v9d5H0LRvcbOURX4v_OUY8kK-TRHlRh3wu5f1xYlPncYXgeR7BImp0y7qXGiR9B_a-MwcRO3QrIrt3dDcT5cqOapQtz712i1XO0DH5_qtKT8NZ5g-H9ed5ILGGP8CkJPB_0-IM">
+            </form>
+            <div class="row"></div>
+         </div>
+      </div>
+      <div class="col-sm-2 col-md-3"></div>
+   </div>
+   
 </body>
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
