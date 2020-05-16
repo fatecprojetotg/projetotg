@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using projetotg.Models;
 
 namespace projetotg.Migrations
 {
     [DbContext(typeof(IdentityAppContext))]
-    partial class IdentityAppContextModelSnapshot : ModelSnapshot
+    [Migration("20200515233042_Correcao")]
+    partial class Correcao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -174,9 +176,6 @@ namespace projetotg.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<string>("NewPassword")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("varchar(256) CHARACTER SET utf8mb4")
