@@ -100,13 +100,13 @@ namespace projetotg.Controllers
             return View("Login");
         }
         [HttpGet]
-        public IActionResult PasswordReset(){
+        public IActionResult PasswordResetAfterEmail(){
             
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> PasswordReset(string Email, string Username,string PasswordHash, 
+        public async Task<IActionResult> PasswordResetAfterEmail(string Email, string Username,string PasswordHash, 
                                                         string NewPassword)
         {
             try
@@ -125,19 +125,19 @@ namespace projetotg.Controllers
                     var resultResetPassword = await _userMgr.ResetPasswordAsync(user, userToken, NewPassword);
 
                     if (resultResetPassword.Succeeded){
-                        return RedirectToAction("Home","Index");
+                        return RedirectToAction("Index","Home");
                     }
-                    return RedirectToAction("Account","Login");
+                    return RedirectToAction("Login","Account");
                     // _singInMgt       
                     // _userMgr.ResetPasswordAsync()
                 }
             }
             catch(Exception ex)
             {
-                 ViewBag.register = ex.Message;
+                ViewBag.Error = ex.Message;
+                return RedirectToAction("Error,","Home");
             }
             return View("Login");
-            
         }
     }
 }
