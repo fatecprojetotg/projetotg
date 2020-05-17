@@ -1,0 +1,42 @@
+@model projetotg.Models.AppUser
+
+@{
+    ViewData["Title"] = "Base";
+}
+<!
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="~/css/site.css" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulos"><center>Título da Página</center></h1>
+    <hr />
+    <div class="row"><!-- Cria uma linha-->
+        <div class="col-md-4"> </div>
+        <div class="col-md-4">
+           <div class="jumbotron"> <!-- Conteúdo do Jumbotron--> </div></div>
+        <div class="col-md-4"> </div>
+        <!-- Divisão de três colunas dividido por 4-->
+    </div>
+    </div>
+    </div>
+</body>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }  
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" </script>
+</html>
