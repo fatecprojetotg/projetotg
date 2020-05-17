@@ -31,7 +31,8 @@ namespace projetotg
             {
                options.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<IdentityAppContext>()
-              .AddRoles<AppRole>();
+              .AddRoles<AppRole>()
+              .AddDefaultTokenProviders();
 
             services.AddDbContext<IdentityAppContext>(cfg => 
             {

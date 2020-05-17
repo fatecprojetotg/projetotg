@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using projetotg.Models;
 
 namespace projetotg.Controllers
@@ -11,11 +12,14 @@ namespace projetotg.Controllers
         private UserManager<AppUser> _userMgr {get;}
         private SignInManager<AppUser> _singInMgt {get;}
 
+        private readonly ILogger<AccountController> _logger;
         public AccountController(UserManager<AppUser> userManager,
-            SignInManager<AppUser> signInManager)
+                                SignInManager<AppUser> signInManager,
+                                ILogger<AccountController> logger)
             {
                 _userMgr = userManager;
                 _singInMgt = signInManager;
+                _logger = logger;
             }
         public async Task<IActionResult> Logout()
         {
@@ -66,7 +70,7 @@ namespace projetotg.Controllers
                 if(user == null)
                 {
                     user = new AppUser();
-                    user.FirtName = FirtName;
+                    user.FirstName = FirtName;
                     user.LastName = LastName;
                     user.UserName = UserName;
                     user.Email = Email;
@@ -94,7 +98,46 @@ namespace projetotg.Controllers
                  ViewBag.register = ex.Message;
             }
             return View("Login");
+        }
+        [HttpGet]
+        public IActionResult PasswordResetAfterEmail(){
+            
+            return View();
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> PasswordResetAfterEmail(string Email, string Username,string PasswordHash, 
+                                                        string NewPassword)
+        {
+            try
+            {   
+                Console.WriteLine(NewPassword);
+                AppUser user = await _userMgr.FindByEmailAsync(Email);
+                _logger.LogWarning("usuario "+ user.UserName);
+                if(user == null)
+                {
+                    ViewBag.UserNotFound = "NotFound";
+                }
+                else
+                {
+                     var userToken = await _userMgr.GenerateUserTokenAsync(user,"Default","ResetPassword");
+                     _logger.LogWarning("usuario Token" );
+                    var resultResetPassword = await _userMgr.ResetPasswordAsync(user, userToken, NewPassword);
+
+                    if (resultResetPassword.Succeeded){
+                        return RedirectToAction("Index","Home");
+                    }
+                    return RedirectToAction("Login","Account");
+                    // _singInMgt       
+                    // _userMgr.ResetPasswordAsync()
+                }
+            }
+            catch(Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+                return RedirectToAction("Error,","Home");
+            }
+            return View("Login");
         }
 
         [HttpGet]
