@@ -26,9 +26,9 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="~/Home/Index">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="LOGO"></i>
         </div>
         <div class="sidebar-brand-text mx-3">SGC <sup></sup></div>
       </a>
@@ -38,7 +38,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="~/Home/Index">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Homepage</span></a>
       </li>
@@ -46,20 +46,7 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Auto Serviço</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" style="">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="~/Ticket/CreateTicket">Criar chamado</a>
-            <a class="collapse-item " href="">Consultar chamados</a>
-            <a class="collapse-item " href="~/Ticket/GetTicketsUser">Meus chamados</a>
-          </div>
-        </div>
-      </li>
+
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
@@ -69,9 +56,12 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="">Meus chamados</a>
+            <a class="collapse-item" href="~/Ticket/CreateTicket">Criar novo chamado</a>
+            <a class="collapse-item " href="~/Ticket/GetTicketsUser">Meus chamados</a>
+            <a class="collapse-item" href="">Meus atendimentos</a>
             <a class="collapse-item" href="">Chamados da equipe</a>
             <a class="collapse-item" href="">Chamados encerrados</a>
+            <a class="collapse-item" href="">Hotnews</a>
           </div>
         </div>
       </li>
@@ -87,8 +77,11 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="login.html">Gerenciar usuários</a>
-            <a class="collapse-item" href="register.html">Relatórios</a>
+            <a class="collapse-item" href="">Usuários</a>
+            <a class="collapse-item" href="">Departamentos</a>
+            <a class="collapse-item" href="">Categorias</a>
+            <a class="collapse-item" href="">Severidade / SLA</a>
+            <a class="collapse-item" href="">Relatórios</a>
           </div>
         </div>
       </li>
