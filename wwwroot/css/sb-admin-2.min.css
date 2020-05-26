@@ -1955,7 +1955,16 @@ textarea.form-control {
 	margin-bottom: 1rem;
 	float: right
 }
+.form-group-3 {
+	margin-bottom: 1rem;
+	text-align: center
+}
 
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
 .form-text {
 	display: block;
 	margin-top: .25rem
