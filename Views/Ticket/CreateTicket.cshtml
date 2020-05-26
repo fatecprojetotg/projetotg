@@ -1,50 +1,81 @@
 @{
 Layout = "~/Views/Shared/_Layout_Home.cshtml";
 }
-
 <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Senha</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-    </div>
+    <h3>Novo chamado</h3>
+   <div class="form-row ">
+
+      <!-- Lado esquerdo-->
+      <div class="form-group col-md-6">
+         <div class="form-group col-md-12">
+            <label for="abertopor">Aberto por</label>
+            <input disabled type="text" class="form-control" id="abertopor" placeholder="Nome de quem estiver abrindo chamado">
+         </div>
+         <div class="col-md-12">
+            <label for="reclamante">Reclamante</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input type="text" class="form-control" placeholder="Nome de quem esta com problema" aria-label="Nome de quem esta com problema" aria-describedby="button-addon2">
+               <div class="input-group-append">
+                  <button class="fas fa-search fa-sm" type="button" id="button-addon2"></button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="categoria">Categoria</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <select id="categoria" class="form-control">
+                  <option selected>---</option>
+                  <option>Problema1</option>
+                  <option>Problema2</option>
+                  <option>Problema3</option>
+               </select>
+            </div>
+         </div>
+      </div>
+      <!-- Fim do lado esquerdo -->
+      <!-- Lado direito -->
+      <div class="form-group col-md-6">
+         <div class="form-group col-md-4">
+            <label for="usuariosafetados">Usuarios afetados</label>
+            <select id="inputEstado" class="form-control">
+               <option selected>---</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3+</option>
+            </select>
+         </div>
+         <div class="form-group col-md-4">
+            <label for="severidade">Severidade</label>
+            <input disabled type="text" id="severidade" class="form-control" placeholder="Severidade">
+         </div>
+      </div>
+      <!-- Fim do lado direito -->
+   </div>
+   <div class="form-group col-md-12">
+      <label for="titulo">Titulo</label>
+      <input type="text" class="form-control" id="titulo" placeholder="Titulo do problema">
+   </div>
+   <div class="form-group col-md-12">
+      <label for="Detalhes">Detalhes</label>
+      <textarea type="text" class="form-control" id="Detalhes" placeholder="Descreva o problema que esta occorrendo"></textarea>
+   </div>
+   <div class="form-group col-md-12">
+        <div class="form-group">
+    <label for="Anexo">Anexar arquivo</label>
+    <input type="file" class="form-control-file" id="Anexo">
   </div>
-  <div class="form-group">
-    <label for="inputAddress">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Endereço 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputEstado">Estado</label>
-      <select id="inputEstado" class="form-control">
-        <option selected>Escolher...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputCEP">CEP</label>
-      <input type="text" class="form-control" id="inputCEP">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Clique em mim
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Entrar</button>
+   </div>
+<br>
+             <div class="form-group col-md-12 ">
+                 <div class="form-group-2">
+   <button type="submit" class="btn btn-primary">Salvar</button>
+   <button type="submit" class="btn btn-primary">Cancelar</button>
+   </div>
+
+   </div>
+   </div>
 </form>

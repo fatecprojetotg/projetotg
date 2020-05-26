@@ -1951,6 +1951,10 @@ textarea.form-control {
 .form-group {
 	margin-bottom: 1rem
 }
+.form-group-2 {
+	margin-bottom: 1rem;
+	float: right
+}
 
 .form-text {
 	display: block;
