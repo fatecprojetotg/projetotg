@@ -145,5 +145,11 @@ namespace projetotg.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            return View();
+        }
     }
 }
