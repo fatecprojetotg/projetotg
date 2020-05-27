@@ -1,5 +1,90 @@
 @{
 Layout = "~/Views/Shared/_Layout_Home.cshtml";
 }
-
-<p>Pagina dos dados do usuario para alteração.</p>
+<form>
+   <div class="form-row ">
+      <div class="col-sm-2 col-md-3"></div>
+      <div class="form-group col-md-6">
+         <h3>Meu perfil</h3>
+         <br>
+         <div class="form-group col-md-12">
+            <label for="User">Usuario</label>
+            <input disabled type="text" class="form-control" id="User" placeholder="usuario">
+         </div>
+         <div class="col-md-12">
+            <label for="Name">Nome</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input type="text" class="form-control" id="Name" placeholder="Nome do usuario" >
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="LastName">Sobrenome</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input type="text" class="form-control" id="LastName" placeholder="Sobrenome do usuario" >
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="Email">Email</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input disabled type="text" class="form-control" id="Email" placeholder="Nome do usuario" >
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="Departamento">Departamento</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <select id="Departamento" class="form-control">
+                  <option selected>---</option>
+                  <option>Departamento1</option>
+                  <option>Departamento2</option>
+                  <option>Departamento3</option>
+               </select>
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="Cargo">Cargo</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input  type="text" class="form-control" id="Cargo" placeholder="Cargo" >
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="Ramal">Ramal</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input  type="text" class="form-control" id="Ramal" placeholder="XXXX-2121" >
+            </div>
+         </div>
+         <div class="col-md-12">
+            <label for="Celular">Celular</label>
+         </div>
+         <div class="form-group">
+            <div class="input-group col-md-12">
+               <input  type="text" class="form-control" id="Celular" placeholder="(99) 99999-9999" >
+            </div>
+         </div>
+         <br>
+         <div class="form-group-3">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            <div class="divider"></div>
+            <button type="submit" class="btn btn-primary">Cancelar</button>
+         </div>
+      </div>
+      <div class="col-sm-2 col-md-3">
+         <div class="form-group col-md-12 ">
+            <div class="form-group-3">
+               <button type="submit" class="btn btn-primary">Alterar senha</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</form>
