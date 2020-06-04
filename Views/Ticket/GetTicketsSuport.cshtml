@@ -1,5 +1,197 @@
 @{
 Layout = "~/Views/Shared/_Layout_Home.cshtml";
 }
+<form>
 
-<p>Consultar chamados da equipe.</p>
+   <!-- Parte de cima-->
+   <div class="form-row ">
+
+      <div class="form-row col-md-11">
+         <!-- lado esquerdo-->
+         <div class="form-row col-md-6">
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label for="TicketNumber" class="col-form-label" >Número</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input disabled type="text" class="form-control" id="titulo" placeholder="9999999">
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label disabled for="TicketNumber" class="col-form-label" >Criado em</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input type="text" class="form-control" id="titulo" placeholder="Data / Hora">
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label disabled for="TicketNumber" class="col-form-label" >Aberto por</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input type="text" class="form-control" id="titulo" placeholder="Usuario que abriu o chamado">
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label disabled for="TicketNumber" class="col-form-label" >Reclamante</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input type="text" class="form-control" id="titulo" placeholder="Pessoa afetada">
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label disabled for="TicketNumber" class="col-form-label" >Telefone</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input type="text" class="form-control" id="titulo" placeholder="99 9999999">
+               </div>
+            </div>
+         </div>
+         <!-- fim do lado esquerdo-->
+         <!-- lado direito-->
+         <div class="form-row col-md-6">
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label for="TicketNumber" class="col-form-label" >Severidade</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input disabled type="text" class="form-control" id="titulo" placeholder="1 - Alta">
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label  for="TicketNumber" class="col-form-label" >Categoria</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input disabled type="text" class="form-control" id="titulo" placeholder="Categoria do problema">
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label disabled for="TicketNumber" class="col-form-label" >Status</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <div class="input-group">
+                     <select id="categoria" class="form-control">
+                        <option selected>---</option>
+                        <option>Aberto</option>
+                        <option>Em andamento</option>
+                        <option>Fechado</option>
+                        <option>Cancelado</option>
+                        <option>Encerrado</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label disabled="" for="TicketNumber" class="col-form-label">Atribuído a</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Nome do agente que ira trabalhar" aria-label="Nome do agente que ira trabalhar" aria-describedby="button-addon2">
+                     <div class="input-group-append">
+                        <button class="fas fa-search fa-sm" type="button" id="button-addon2"></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-row col-md-12">
+               <div class="col-sm-4 text-allign-right">
+                  <label  for="TicketNumber" class="col-form-label" >SLA</label>
+               </div>
+               <div class="col-sm-8 input-allign-right">
+                  <input disabled type="text" class="form-control" id="titulo" placeholder="Data / hora">
+               </div>
+            </div>
+         </div>
+         <!-- fim do lado direito-->
+      </div>
+                <div class="form-group col-md-1 ">
+         <div class="form-group-3">
+            <button type="submit" class="btn btn-primary">Editar</button>
+ <br>
+                        <br>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+ <br>
+                                    <br>
+            <button type="submit" class="btn btn-primary">Cancelar</button>
+         </div>
+      </div>
+   </div>
+   <!-- Fim da parte de cima-->
+   <!-- Parte debaixo-->
+   <div class="form-group col-md-12">
+      <label for="titulo">Titulo</label>
+      <input disabled type="text" class="form-control" id="titulo" placeholder="Titulo do problema">
+   </div>
+   <div class="form-group col-md-12">
+      <label for="Detalhes">Detalhes</label>
+      <textarea disabled type="text" class="form-control" id="Detalhes" placeholder="Descreva o problema que esta occorrendo"></textarea>
+   </div>
+   <div class="form-group col-md-12">
+      <div class="form-group">
+         <label for="Anexo">Anexo: </label>
+         <a>Link</a>
+      </div>
+   </div>
+   <div class="form-group col-md-12">
+      <label for="Detalhes">Comentarios</label>
+      <textarea type="text" class="form-control" id="Detalhes" placeholder="Adicione um comentario"></textarea>
+   </div>
+<div class="form-group col-md-12">
+   <label for="Detalhes">Logs</label>
+   <li class="h-card">
+      <div class="sn-card-component sn-card-component_first sn-card-component_meta sn-card-component_meta_sibling"><span class="sn-card-component-createdby">Nome do usuario que colocou a log</span></div>
+      <div class="sn-card-component sn-card-component_first sn-card-component_meta">
+         <span class="sn-card-component-time">
+            <div class="date-calendar">Data e hora que a log foi salva</div>
+         </span>
+      </div>
+      <div class="sn-card-component sn-card-component_records">
+         <div class="sn-widget">
+            <ul class="sn-widget-list sn-widget-list-table">
+               <span class="sn-widget-textblock-body sn-widget-textblock-body_formatted">Comentario que o usuario vai inserir / Comentario que o usuario vai inserir Comentario que o usuario vai inserir / Comentario que o usuario vai inserir Comentario que o usuario vai inserir / Comentario que o usuario vai inserirComentario que o usuario vai inserir / Comentario que o usuario vai inserirComentario que o usuario vai inserir / Comentario que o usuario vai inserir</span>
+            </ul>
+         </div>
+      </div>
+      <div class="sn-card-component_accent-bar " style=""></div>
+   </li>
+
+      <li class="h-card">
+      <div class="sn-card-component sn-card-component_first sn-card-component_meta sn-card-component_meta_sibling"><span class="sn-card-component-createdby">Nome do usuario que colocou a log</span></div>
+      <div class="sn-card-component sn-card-component_first sn-card-component_meta">
+         <span class="sn-card-component-time">
+            <div class="date-calendar">Data e hora que a log foi salva</div>
+         </span>
+      </div>
+      <div class="sn-card-component sn-card-component_records">
+         <div class="sn-widget">
+            <ul class="sn-widget-list sn-widget-list-table">
+               <span class="sn-widget-textblock-body sn-widget-textblock-body_formatted">Comentario que o usuario vai inserir / Comentario que o usuario vai inserir Comentario que o usuario vai inserir / Comentario que o usuario vai inserir Comentario que o usuario vai inserir / Comentario que o usuario vai inserirComentario que o usuario vai inserir / Comentario que o usuario vai inserirComentario que o usuario vai inserir / Comentario que o usuario vai inserir</span>
+            </ul>
+         </div>
+      </div>
+      <div class="sn-card-component_accent-bar " style=""></div>
+   </li>
+</div>
+</form>
